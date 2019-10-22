@@ -6,6 +6,8 @@
 #   movies = Movie.create([ name: 'Star Wars'   name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+Character.destroy_all
+
 harry = Character.create(
         "name": "Harry Potter",
         "species": "human",
@@ -454,6 +456,59 @@ filch = Character.create(
         "actor": "David Bradley",
         "alive": true,
         "image": "http://hp-api.herokuapp.com/images/filch.jpg"
+)
+
+dumbledore = Character.create(
+        "name": "Albus Dumbledore",
+        "species": "human",
+        "gender": "male",
+        "house": "Gryffindor",
+        "dateOfBirth": "",
+        "yearOfBirth": "1881",
+        "ancestry": "half-blood",
+        "eyeColour": "blue",
+        "hairColour": "white",
+        "patronus": "Phoenix",
+        "hogwartsStudent": false,
+        "hogwartsStaff": true,
+        "actor": "Richard Harris, Michael Gambon",
+        "alive": false,
+        "image": "https://miro.medium.com/max/350/1*8MnXr3BHd9Px4Avi8ed6Ng.jpeg"
+)
+
+lily = Character.create(
+        "name": "Lily J. Potter",
+        "species": "human",
+        "gender": "female",
+        "house": "Gryffindor",
+        "dateOfBirth": "",
+        "yearOfBirth": "1960",
+        "ancestry": "Muggle-born",
+        "eyeColour": "green",
+        "hairColour": "red",
+        "patronus": "Doe",
+        "hogwartsStudent": false,
+        "hogwartsStaff": false,
+        "actor": "Geraldine Somerville",
+        "alive": false,
+        "image": "https://vignette.wikia.nocookie.net/cour-de-cassation/images/4/40/Harry-potter7-lily_evans.jpg/revision/latest?cb=20190704043055"
+)
+james = Character.create(
+        "name": "James Potter",
+        "species": "human",
+        "gender": "male",
+        "house": "Gryffindor",
+        "dateOfBirth": "03-27-1960",
+        "yearOfBirth": "1960",
+        "ancestry": "Pure-blood",
+        "eyeColour": "hazel",
+        "hairColour": "black",
+        "patronus": "Stag",
+        "hogwartsStudent": false,
+        "hogwartsStaff": false,
+        "actor": "Adrian Rawlins",
+        "alive": false,
+        "image": "https://vignette.wikia.nocookie.net/harrypotter/images/2/20/BestmainimagejamespotterI.jpg/revision/latest?cb=20141104011328"
 )
 
 
