@@ -1,4 +1,3 @@
-require 'pry'
 class FavoritesController < ApplicationController
     def index
         @favorites = Favorite.all
