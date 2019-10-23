@@ -7,6 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 Character.destroy_all
+User.destroy_all
 
 harry = Character.create(
         "name": "Harry Potter",
