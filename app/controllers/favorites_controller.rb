@@ -8,8 +8,8 @@ class FavoritesController < ApplicationController
 
 
     def create
-        @favorite = Favorite.new(character_id: 52, user_id: 1)
-        @favorite.save
+        @favorite = Favorite.create(character_id: params[:character_id], user_id: params[:user_id])
+        
         render json: @favorite
     end 
 
