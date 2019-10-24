@@ -12,5 +12,10 @@ class FavoritesController < ApplicationController
         render json: @favorite
     end 
 
+    def destroy
+        @favorite = Favorite.find_by(user_id: params[:user_id], character_id: params[:character_id])
+
+        @favorite.destroy
+    end 
 
 end
